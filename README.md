@@ -341,7 +341,7 @@ We can found the callback named **OdomChange** witch allow us to received the in
 
          sim_vehicle.py -L Marseille  -S 1  --out=udp:0.0.0.0:14550 --map --console
 
-" -S 1 " is the speed control if u want to increase it, go into /home/%sessions_name%/.local/bin/mavproxy.py and modify the hearthbeat value. Then launch the command with the same value write in the mavproxy.py script
+" -S 1 " is the speed control if you want to increase it, go into /home/%sessions_name%/.local/bin/mavproxy.py and modify the hearthbeat value. Then launch the command with the same value write in the mavproxy.py script
 
 - Launch QgroundControl.
 
