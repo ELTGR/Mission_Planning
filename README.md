@@ -1,3 +1,7 @@
+
+
+ # FOR RAPID CAPRICA FOLLOW FROM THE VISUAL STUDIO CODE PART
+
 # Blue_rov_planification
 - Le but de ce code Python est de simuler le blurov2 grâce à Ardusub dans Qgroundcontrole et dans un monde crée dans Unity. 
 Le monde Unity reprend une parti du port de la pointe rouge a Marseille.
@@ -160,10 +164,11 @@ the result must be : Python 3.8.10
 - Go into the Mission_Planning/catkin_ws directory and run : 
 
          catkin build
-         
+        
+
  - You must obtain this:    
       
- <img src="https://user-images.githubusercontent.com/122261448/231142898-501e7eb3-9679-43fc-abac-b45a204b17c0.png" width="600" /> 
+ <img src="https://user-images.githubusercontent.com/122261448/235843733-3f1d7dbd-8df1-41fe-bd51-3b7dd50c3872.png" width="600" /> 
 
 - Update the environment variables
 
