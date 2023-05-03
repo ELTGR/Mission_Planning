@@ -1,6 +1,7 @@
 
 
  # FOR RAPID CAPRICA FOLLOW FROM THE VISUAL STUDIO CODE PART
+ https://github.com/ELTGR/Mission_Planning/edit/main/README.md#visual-studio-code
 
 # Blue_rov_planification
 - Le but de ce code Python est de simuler le blurov2 grâce à Ardusub dans Qgroundcontrole et dans un monde crée dans Unity. 
@@ -236,8 +237,7 @@ the result must be : Python 3.8.10
 
 
 ## Install Unity 2021.3.18f1
-### Install Unity 
-:
+### Install Unity :
 - Add Unity to the repository : 
 
          sudo sh -c 'echo "deb https://hub.unity3d.com/linux/repos/deb stable main" > /etc/apt/sources.list.d/unityhub.list'
