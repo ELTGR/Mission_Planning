@@ -256,31 +256,21 @@ the result must be : Python 3.8.10
 - Launch UnityHub and ingnore the proposition. In **Installs** click on **Install Editor**.
 Go into **Archive**   click **download archive**, on the website look for the **version 2021.3.18**.Ones found click **Unity Hub**. The download must start into UnityHub.
 
-- We clone the repository of the Unity word (attention don't clone it into the Bluerov2_dock_scan):
+-Next open the projet named Unity_Mission_Planning
 
-         git clone https://github.com/Gregtmlg/Mission_Planning.git
-         
 - We will verify if all usefull Unity packages are install. For this go in Window > Manager. 
 - In projet list packages, verify the presence of : Burst, Addressables and ROS TCP Connector. 
-
-### Install Unity Repository :
-
-work in progress
 
 ##    Ardupilot modification   :
 - In the Ardupilot/Tool/autotest add this line : 
  
          Marseille=43.243908,5.363613,0,90
 
-
-
 ##   bluerov_node modification de  :
 
 - In the **get_yaml_data()** fonction file **bluerov_node** in th repository **mission_planning** modify the path: 
 
    Config_scan = "/home/eliott/Desktop/Mission_Planning/mission_planning/bridge/Config_scan.yaml"
-
-
 
 ## Explanation of the communication system
 
