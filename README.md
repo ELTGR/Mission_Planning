@@ -1,7 +1,7 @@
 
 
- # FOR RAPID CAPRICA FOLLOW FROM THE VISUAL STUDIO CODE PART
- https://github.com/ELTGR/Mission_Planning/edit/main/README.md#visual-studio-code
+ ## FOR RAPID CAPRICA FOLLOW FROM THE VISUAL STUDIO CODE PART : https://github.com/ELTGR/Mission_Planning/edit/main/README.md#visual-studio-code
+
 
 # Blue_rov_planification
 - Le but de ce code Python est de simuler le blurov2 grâce à Ardusub dans Qgroundcontrole et dans un monde crée dans Unity. 
