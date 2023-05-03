@@ -1,6 +1,6 @@
 
 
- ## FOR RAPID CAPRICA FOLLOW FROM THE VISUAL STUDIO CODE PART : https://github.com/ELTGR/Mission_Planning/README.md#visual-studio-code
+ ## FOR RAPID CAPRICA FOLLOW FROM THE VISUAL STUDIO CODE PART : https://github.com/ELTGR/Mission_Planning#visual-studio-code
 
 
 # Blue_rov_planification
