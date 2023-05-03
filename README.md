@@ -256,7 +256,7 @@ the result must be : Python 3.8.10
 - Launch UnityHub and ingnore the proposition. In **Installs** click on **Install Editor**.
 Go into **Archive**   click **download archive**, on the website look for the **version 2021.3.18**.Ones found click **Unity Hub**. The download must start into UnityHub.
 
--Next open the projet named Unity_Mission_Planning
+- Next open the projet named Unity_Mission_Planning
 
 - We will verify if all usefull Unity packages are install. For this go in Window > Manager. 
 - In projet list packages, verify the presence of : Burst, Addressables and ROS TCP Connector. 
