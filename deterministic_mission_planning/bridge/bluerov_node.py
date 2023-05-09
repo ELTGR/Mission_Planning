@@ -255,7 +255,7 @@ class BlueRov(Bridge):
 def get_yaml_data() :
 
         # !!! Write the path to your ymal file !!!
-    Config_scan = "/home/eliott/Desktop/Bluerov_quai_scanning/Bluerov_deterministe/bridge/Config_scan.yaml"
+    Config_scan = "/home/eliott/Desktop/Mission_Planning/deterministic_mission_planning/bridge/Config_scan.yaml"
     with open(Config_scan,"r") as yaml_file: 
         data=yaml.full_load(yaml_file)
 
@@ -363,7 +363,7 @@ if __name__ == '__main__':
         print('pubs error with ROS: ', error)
         exit(1)
 
-    bluerov = BlueRov(device='udp:localhost:14551')
+    bluerov = BlueRov(device='udp:localhost:14550')
     
 
     # Get yaml data

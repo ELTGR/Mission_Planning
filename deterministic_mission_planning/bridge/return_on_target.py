@@ -77,7 +77,7 @@ def target_coordinates(distance_recording_cible,nbr_target_passing) :
 
 
 def point_star_stop(x,y,range_sensor,nbr_target_passing) : 
-
+    range_sensor=range_sensor*1.5
     start_stopx=[]
     start_stopy=[]  
 
