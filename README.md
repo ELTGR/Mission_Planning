@@ -171,7 +171,7 @@ the result must be : Python 3.8.10
       
  <img src="https://user-images.githubusercontent.com/122261448/235843733-3f1d7dbd-8df1-41fe-bd51-3b7dd50c3872.png" width="600" /> 
 
-- Update the environment variables
+- Update the environment variables, remplace $HOME by your own path
 
       echo 'source $HOME/Mission_Planning/catkin_ws/devel/setup.bash' >> ~/.bashrc
 
