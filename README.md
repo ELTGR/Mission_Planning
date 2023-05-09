@@ -218,8 +218,6 @@ the result must be : Python 3.8.10
          git submodule update --init --recursive
       
          Tools/environment_install/install-prereqs-ubuntu.sh -y
- 
-         . ~/.profile
          
 - Logout and login to make effective the changes.
 
@@ -262,7 +260,7 @@ Go into **Archive**   click **download archive**, on the website look for the **
 - In projet list packages, verify the presence of : Burst, Addressables and ROS TCP Connector. 
 
 ##    Ardupilot modification   :
-- In the Ardupilot/Tool/autotest add this line : 
+- In the Ardupilot/Tools/autotest/locations.txt add this line : 
  
          Marseille=43.243908,5.363613,0,90
 
@@ -337,7 +335,7 @@ We can found the callback named **OdomChange** witch allow us to received the in
  
                   roslaunch ros_tcp_endpoint endpoint.launch
                   
-- In the ardupilot/ardusub repository open a second terminal andcrun :
+- In the ardupilot/ardusub repository open a second terminal and run:
 
          sim_vehicle.py -L Marseille  -S 1  --out=udp:0.0.0.0:14550 --map --console
 
