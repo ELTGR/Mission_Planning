@@ -234,7 +234,7 @@ class Bridge(object):
         self.conn.set_mode('GUIDED')
         # Set mask
         # mask = 0b0000000111111111
-        mask = 0b100111111000
+        mask = 0b10011111000
         # for i, value in enumerate(param):
         #     if value is not None:
         #         mask -= 1<<i

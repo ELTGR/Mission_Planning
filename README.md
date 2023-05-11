@@ -1,8 +1,3 @@
-
-
- ## FOR RAPID CAPRICA FOLLOW FROM THE VISUAL STUDIO CODE PART : https://github.com/ELTGR/Mission_Planning#visual-studio-code
-
-
 # Blue_rov_planification
 - Le but de ce code Python est de simuler le blurov2 grâce à Ardusub dans Qgroundcontrole et dans un monde crée dans Unity. 
 Le monde Unity reprend une parti du port de la pointe rouge a Marseille.
@@ -165,13 +160,12 @@ the result must be : Python 3.8.10
 - Go into the Mission_Planning/catkin_ws directory and run : 
 
          catkin build
-        
-
+         
  - You must obtain this:    
       
- <img src="https://user-images.githubusercontent.com/122261448/235843733-3f1d7dbd-8df1-41fe-bd51-3b7dd50c3872.png" width="600" /> 
+ <img src="https://user-images.githubusercontent.com/122261448/231142898-501e7eb3-9679-43fc-abac-b45a204b17c0.png" width="600" /> 
 
-- Update the environment variables, remplace $HOME by your own path
+- Update the environment variables
 
       echo 'source $HOME/Mission_Planning/catkin_ws/devel/setup.bash' >> ~/.bashrc
 
@@ -218,6 +212,8 @@ the result must be : Python 3.8.10
          git submodule update --init --recursive
       
          Tools/environment_install/install-prereqs-ubuntu.sh -y
+ 
+         . ~/.profile
          
 - Logout and login to make effective the changes.
 
@@ -235,7 +231,8 @@ the result must be : Python 3.8.10
 
 
 ## Install Unity 2021.3.18f1
-### Install Unity :
+### Install Unity 
+:
 - Add Unity to the repository : 
 
          sudo sh -c 'echo "deb https://hub.unity3d.com/linux/repos/deb stable main" > /etc/apt/sources.list.d/unityhub.list'
@@ -254,21 +251,31 @@ the result must be : Python 3.8.10
 - Launch UnityHub and ingnore the proposition. In **Installs** click on **Install Editor**.
 Go into **Archive**   click **download archive**, on the website look for the **version 2021.3.18**.Ones found click **Unity Hub**. The download must start into UnityHub.
 
-- Next open the projet named Unity_Mission_Planning
+- We clone the repository of the Unity word (attention don't clone it into the Bluerov2_dock_scan):
 
+         git clone https://github.com/Gregtmlg/Mission_Planning.git
+         
 - We will verify if all usefull Unity packages are install. For this go in Window > Manager. 
 - In projet list packages, verify the presence of : Burst, Addressables and ROS TCP Connector. 
 
+### Install Unity Repository :
+
+work in progress
+
 ##    Ardupilot modification   :
-- In the Ardupilot/Tools/autotest/locations.txt add this line : 
+- In the Ardupilot/Tool/autotest add this line : 
  
          Marseille=43.243908,5.363613,0,90
+
+
 
 ##   bluerov_node modification de  :
 
 - In the **get_yaml_data()** fonction file **bluerov_node** in th repository **mission_planning** modify the path: 
 
    Config_scan = "/home/eliott/Desktop/Mission_Planning/mission_planning/bridge/Config_scan.yaml"
+
+
 
 ## Explanation of the communication system
 
@@ -335,11 +342,11 @@ We can found the callback named **OdomChange** witch allow us to received the in
  
                   roslaunch ros_tcp_endpoint endpoint.launch
                   
-- In the ardupilot/ardusub repository open a second terminal and run:
+- In the ardupilot/ardusub repository open a second terminal andcrun :
 
          sim_vehicle.py -L Marseille  -S 1  --out=udp:0.0.0.0:14550 --map --console
 
-" -S 1 " is the speed control if you want to increase it, go into /home/%sessions_name%/.local/bin/mavproxy.py and modify the hearthbeat value. Then launch the command with the same value write in the mavproxy.py script
+" -S 1 " is the speed control if u want to increase it, go into /home/%sessions_name%/.local/bin/mavproxy.py and modify the hearthbeat value. Then launch the command with the same value write in the mavproxy.py script
 
 - Launch QgroundControl.
 
