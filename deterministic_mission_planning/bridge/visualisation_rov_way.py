@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 def dessin_pos(suppx,suppy,ptn_intpx,ptn_intpy) :
 
-
+    
 
     #---------------------------recuperation des logs x,y-------------------------------------
     fichier = open("log_position.txt", "r")
@@ -63,6 +63,8 @@ def dessin_pos(suppx,suppy,ptn_intpx,ptn_intpy) :
     plt.gcf().canvas.mpl_connect(
         'key_release_event',
         lambda event: [exit(0) if event.key == 'escape' else None])
+
     plt.show()
 
 
+    

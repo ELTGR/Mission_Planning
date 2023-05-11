@@ -49,7 +49,9 @@ class Bridge(object):
         self.obj_4_pose = False
         self.temps_1=0
         self.temps_2=0
-        
+        self.temps_3=0
+        self.temps_4=0
+
         #flag pour savoir quand le parcour et terminer
         self.flag_end=False
         #flag d'ajoue de point 
@@ -442,10 +444,10 @@ class Bridge(object):
 
 
     def deterministe_scan(self,current_pose):
-        obj=[[-8.45,-22.71],
-             [-4.86,-19.43],
-             [-13.09,-15.76],
-             [-3.60,-10.69]
+        obj=[[-6.27,-31.47],
+             [-1.57,-25.62],
+             [-11.22,-24.74],
+             [-3.62,-19.98]
              ]
         
         if abs(current_pose[0] - obj[0][0]) < 0.25 and abs(current_pose[1] - obj[0][1]) < 0.25 and  not(self.obj_1_pose) :
@@ -455,7 +457,7 @@ class Bridge(object):
             data=fichier.readlines()[-1]
             fichier.close()
             self.temps_1=data.split(',')[0]
-
+            
         if abs(current_pose[0] - obj[1][0]) < 0.25 and abs(current_pose[1] - obj[1][1]) < 0.25 and  not(self.obj_2_pose) :
             print("trouver obj2" ) 
             self.obj_2_pose=True
@@ -463,7 +465,7 @@ class Bridge(object):
             data=fichier.readlines()[-1]
             fichier.close()
             self.temps_2=data.split(',')[0]
-
+            
         if abs(current_pose[0] - obj[2][0]) < 0.25 and abs(current_pose[1] - obj[2][1]) < 0.25 and  not(self.obj_3_pose) :
             print("trouver obj3" ) 
             self.obj_3_pose=True
@@ -471,7 +473,7 @@ class Bridge(object):
             data=fichier.readlines()[-1]
             fichier.close()
             self.temps_3=data.split(',')[0]
-
+            
         if abs(current_pose[0] - obj[3][0]) < 0.25 and abs(current_pose[1] - obj[3][1]) < 0.25 and  not(self.obj_4_pose) :
             print("trouver obj4" ) 
             self.obj_4_pose=True
@@ -479,7 +481,7 @@ class Bridge(object):
             data=fichier.readlines()[-1]
             fichier.close()
             self.temps_4=data.split(',')[0]
-
+            
 
     import numpy as np
     from matplotlib import pyplot as plt

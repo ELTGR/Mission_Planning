@@ -255,7 +255,7 @@ class BlueRov(Bridge):
 def get_yaml_data() :
 
         # !!! Write the path to your ymal file !!!
-    Config_scan = "/home/eliott/Desktop/Mission_Planning/deterministic_mission_planning/bridge/Config_scan.yaml"
+    Config_scan = "/home/cellule_ia/Desktop/AGD/Mission_Planning/deterministic_mission_planning/bridge/Config_scan.yaml"
     with open(Config_scan,"r") as yaml_file: 
         data=yaml.full_load(yaml_file)
 
