@@ -1,0 +1,15 @@
+#Scan Settings
+
+depth : -7
+range_sensor : 2
+scan_passing_accurary : 2
+nbr_target_passing : 3
+position_init_rov : [43.243908, 5.363613] #initial rov position 
+
+lat_long :  [[43.24395214880378, 5.363245238883524], #first corner of the squaning area
+             [43.24390916437108, 5.363470460182055], #second
+             [43.24374517199685, 5.363371971541532], #third
+             [43.24377643348961, 5.3631627559661865]] #last corner
+
+
+
