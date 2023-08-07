@@ -263,7 +263,7 @@ Go into **Archive**   click **download archive**, on the website look for the **
 work in progress
 
 ##    Ardupilot modification   :
-- In the Ardupilot/Tool/autotest add this line : 
+- In the Ardupilot/Tool/autotest.location.txt add this line : 
  
          Marseille=43.243908,5.363613,0,90
 
